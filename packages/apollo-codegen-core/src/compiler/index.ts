@@ -59,7 +59,7 @@ export interface CompilerOptions {
 }
 
 export interface CompilerContext {
-  schema: GraphQLSchema;
+  schema: any;
   typesUsed: GraphQLType[];
   operations: { [operationName: string]: Operation };
   fragments: { [fragmentName: string]: Fragment };
@@ -162,7 +162,7 @@ export function stripProp(propName: string, obj: Object) {
 }
 
 export function compileToIR(
-  schema: GraphQLSchema,
+  schema: any,
   document: DocumentNode,
   options: CompilerOptions = {
     exposeTypeNodes: true,
@@ -229,7 +229,7 @@ export function compileToIR(
 
 class Compiler {
   options: CompilerOptions;
-  schema: GraphQLSchema;
+  schema: any;
   typesUsedSet: Set<GraphQLType>;
   unionTypesSet: Set<GraphQLUnionType>;
   interfaceTypesMap: Map<
@@ -239,7 +239,7 @@ class Compiler {
 
   unresolvedFragmentSpreads: FragmentSpread[] = [];
 
-  constructor(schema: GraphQLSchema, options: CompilerOptions) {
+  constructor(schema: any, options: CompilerOptions) {
     this.schema = schema;
     this.options = options;
 

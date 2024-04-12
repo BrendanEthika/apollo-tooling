@@ -9,7 +9,7 @@ const starWarsSchema = loadSchema(
 
 function compileFromSource(
   source: string,
-  schema: GraphQLSchema = starWarsSchema
+  schema: any = starWarsSchema
 ) {
   const document = parse(source);
   return compileToLegacyIR(schema, document, {

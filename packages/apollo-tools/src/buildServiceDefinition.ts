@@ -213,7 +213,7 @@ export function buildServiceDefinition(
 }
 
 function addResolversToSchema(
-  schema: GraphQLSchema,
+  schema: any,
   resolvers: GraphQLResolverMap<any>
 ) {
   for (const [typeName, fieldConfigs] of Object.entries(resolvers)) {

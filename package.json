@@ -23,12 +23,12 @@
     "lint": "prettier --list-different \"packages/*/src/**/*.{js,jsx,ts,tsx}\"",
     "lint-fix": "prettier --write \"packages/*/src/**/*.{js,jsx,ts,tsx}\"",
     "changeset-publish": "changeset publish",
-    "client:codegen": "node ./packages/apollo/bin/run client:codegen --target=typescript --outputFlat ./packages/apollo-language-server/src/graphqlTypes.ts",
+    "client:codegen": "node ./packages/apollo/bin/run client:codegen --target=typescript --outputFlat packages/ng-apollo-language-server/src/graphqlTypes.ts",
     "install-with-npm-8.5": "npm i -g npm@^8.5.0 && npm i"
   },
   "engines": {
     "node": ">=8",
-    "npm": ">=8.5.0 <9.x"
+    "npm": ">=8.5.0"
   },
   "workspaces": [
     "packages/*"

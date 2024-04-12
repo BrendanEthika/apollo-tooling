@@ -145,7 +145,7 @@ export function getASTNodeAndTypeInfoAtPosition(
   source: Source,
   position: Position,
   root: ASTNode,
-  schema: GraphQLSchema
+  schema: any
 ): [ASTNode, TypeInfo] | null {
   const offset = positionToOffset(source, position);
 

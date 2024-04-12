@@ -47,7 +47,7 @@
     "apollo-codegen-typescript": "0.40.9",
     "apollo-env": "0.10.2",
     "apollo-graphql": "0.9.7",
-    "ng-apollo-language-server": "1.27.2",
+    "ng-apollo-language-server": "1.27.3",
     "chalk": "4.1.2",
     "cli-ux": "6.0.9",
     "env-ci": "7.1.0",

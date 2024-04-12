@@ -5,6 +5,7 @@ import { ProjectCommand } from "../../Command";
 import mkdirp from "mkdirp";
 import fs from "fs";
 import { dirname as getDirName } from "path";
+import {GraphQLSchema} from "graphql/type/schema";
 
 export default class ServiceDownload extends ProjectCommand {
   static aliases = ["schema:download"];
@@ -60,7 +61,7 @@ export default class ServiceDownload extends ProjectCommand {
           try {
             const graphVariant: string = config.variant;
 
-            const schema = await project.resolveSchema({ tag: graphVariant });
+            const schema = <GraphQLSchema>await project.resolveSchema({ tag: graphVariant });
             await mkdirp(getDirName(args.output));
             fs.writeFileSync(
               args.output,

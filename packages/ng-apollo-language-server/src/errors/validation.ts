@@ -45,7 +45,7 @@ export const defaultValidationRules: ValidationRule[] = [
 ];
 
 export function getValidationErrors(
-  schema: GraphQLSchema,
+  schema: any,
   document: DocumentNode,
   fragments?: { [fragmentName: string]: FragmentDefinitionNode },
   rules: ValidationRule[] = defaultValidationRules
@@ -82,8 +82,8 @@ export function getValidationErrors(
 }
 
 export function validateQueryDocument(
-  schema: GraphQLSchema,
-  document: DocumentNode
+    schema: any,
+    document: DocumentNode
 ) {
   try {
     const validationErrors = getValidationErrors(schema, document);
@@ -130,7 +130,7 @@ export function NoTypenameAlias(context: ValidationContext) {
   };
 }
 
-function hasClientSchema(schema: GraphQLSchema): boolean {
+function hasClientSchema(schema: any): boolean {
   const query = schema.getQueryType();
   const mutation = schema.getMutationType();
   const subscription = schema.getSubscriptionType();

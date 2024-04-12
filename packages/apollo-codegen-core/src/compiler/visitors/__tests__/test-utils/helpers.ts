@@ -8,7 +8,7 @@ export const starWarsSchema = loadSchema(
 
 export function compile(
   source: string,
-  schema: GraphQLSchema = starWarsSchema,
+  schema: any = starWarsSchema,
   options: CompilerOptions = {}
 ) {
   const document = parse(source);

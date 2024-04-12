@@ -29,21 +29,22 @@ type TypeTransformer = (
 ) => GraphQLNamedType | null | undefined;
 
 export function transformSchema(
-  schema: GraphQLSchema,
+  schema: any,
   transformType: TypeTransformer
 ): GraphQLSchema {
   const typeMap: { [typeName: string]: GraphQLNamedType } = Object.create(null);
 
   for (const oldType of Object.values(schema.getTypeMap())) {
-    if (isIntrospectionType(oldType)) continue;
+    const formatType = <GraphQLNamedType>oldType;
+    if (isIntrospectionType(formatType)) continue;
 
-    const result = transformType(oldType);
+    const result = transformType(formatType);
 
     // Returning `null` removes the type.
     if (result === null) continue;
 
     // Returning `undefined` keeps the old type.
-    const newType = result || oldType;
+    const newType = result || formatType;
     typeMap[newType.name] = recreateNamedType(newType);
   }
 
