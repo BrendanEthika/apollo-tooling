@@ -37,11 +37,11 @@ Apollo CLI brings together your GraphQL clients and servers with tools for valid
 
 <!-- usage -->
 ```sh-session
-$ npm install -g apollo
+$ npm install -g ng-apollo
 $ apollo COMMAND
 running command...
 $ apollo (-v|--version|version)
-apollo/2.33.11 darwin-arm64 node-v16.14.2
+ng-apollo/2.35.0 darwin-arm64 node-v20.11.0
 $ apollo --help [COMMAND]
 USAGE
   $ apollo COMMAND
@@ -130,7 +130,7 @@ _See code: [src/commands/client/check.ts](https://github.com/BrendanEthika/apoll
 
 ## `apollo client:codegen [OUTPUT]`
 
-Generate static types for GraphQL queries. Can use the published schema in the Apollo registry or a downloaded schema.
+[DEPRECATED] Generate static types for GraphQL queries. Can use the published schema in the Apollo registry or a downloaded schema.
 
 ```
 USAGE
@@ -238,6 +238,9 @@ OPTIONS
 
   --queries=queries
       Deprecated in favor of the includes flag
+
+  --suppressDeprecationWarning
+      Silence the deprecation warning output by the codegen command
 
   --suppressSwiftMultilineStringLiterals
       Prevents operations from being rendered as multiline strings [Swift
@@ -465,20 +468,20 @@ _See code: [src/commands/client/push.ts](https://github.com/BrendanEthika/apollo
 
 ## `apollo help [COMMAND]`
 
-display help for apollo
+Display help for apollo.
 
 ```
 USAGE
   $ apollo help [COMMAND]
 
 ARGUMENTS
-  COMMAND  command to show help for
+  COMMAND  Command to show help for.
 
 OPTIONS
-  --all  see all commands in CLI
+  -n, --nested-commands  Include all nested commands in the output.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.18/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
 ## `apollo plugins`
 
@@ -539,9 +542,9 @@ DESCRIPTION
 
   Installation of a user-installed plugin will override a core plugin.
 
-  e.g. If you have a core plugin that has a 'hello' command, installing a
-  user-installed plugin with a 'hello' command will override the core
-  plugin implementation. This is useful if a user needs to update core
+  e.g. If you have a core plugin that has a 'hello' command, installing a 
+  user-installed plugin with a 'hello' command will override the core 
+  plugin implementation. This is useful if a user needs to update core 
   plugin functionality in the CLI without the need to patch and update the
    whole CLI.
 
@@ -549,7 +552,7 @@ ALIASES
   $ apollo plugins:add
 
 EXAMPLES
-  $ apollo plugins:install myplugin
+  $ apollo plugins:install myplugin 
   $ apollo plugins:install https://github.com/someuser/someplugin
   $ apollo plugins:install someuser/someplugin
 ```
@@ -572,12 +575,12 @@ OPTIONS
   -v, --verbose
 
 DESCRIPTION
-  Installation of a linked plugin will override a user-installed or core
+  Installation of a linked plugin will override a user-installed or core 
   plugin.
 
-  e.g. If you have a user-installed or core plugin that has a 'hello'
+  e.g. If you have a user-installed or core plugin that has a 'hello' 
   command, installing a linked plugin with a 'hello' command will override
-   the user-installed or core plugin implementation. This is useful for
+   the user-installed or core plugin implementation. This is useful for 
   development work.
 
 EXAMPLE
@@ -699,8 +702,8 @@ OPTIONS
 
 DESCRIPTION
   -----------------------------------------------------------------
-  DEPRECATED: This command will be removed from the `apollo` CLI in
-  its next major version. Replacement functionality is available in
+  DEPRECATED: This command will be removed from the `apollo` CLI in 
+  its next major version. Replacement functionality is available in 
   the new Apollo Rover CLI: https://go.apollo.dev/t/migration
   -----------------------------------------------------------------
 
@@ -747,8 +750,8 @@ OPTIONS
 
 DESCRIPTION
   -----------------------------------------------------------------
-  DEPRECATED: This command will be removed from the `apollo` CLI in
-  its next major version. Replacement functionality is available in
+  DEPRECATED: This command will be removed from the `apollo` CLI in 
+  its next major version. Replacement functionality is available in 
   the new Apollo Rover CLI: https://go.apollo.dev/t/migration
   -----------------------------------------------------------------
 ```
@@ -790,8 +793,8 @@ OPTIONS
 
 DESCRIPTION
   -----------------------------------------------------------------
-  DEPRECATED: This command will be removed from the `apollo` CLI in
-  its next major version. Replacement functionality is available in
+  DEPRECATED: This command will be removed from the `apollo` CLI in 
+  its next major version. Replacement functionality is available in 
   the new Apollo Rover CLI: https://go.apollo.dev/t/migration
   -----------------------------------------------------------------
 
@@ -830,8 +833,8 @@ OPTIONS
 
 DESCRIPTION
   -----------------------------------------------------------------
-  DEPRECATED: This command will be removed from the `apollo` CLI in
-  its next major version. Replacement functionality is available in
+  DEPRECATED: This command will be removed from the `apollo` CLI in 
+  its next major version. Replacement functionality is available in 
   the new Apollo Rover CLI: https://go.apollo.dev/t/migration
   -----------------------------------------------------------------
 ```
@@ -895,8 +898,8 @@ OPTIONS
 
 DESCRIPTION
   -----------------------------------------------------------------
-  DEPRECATED: This command will be removed from the `apollo` CLI in
-  its next major version. Replacement functionality is available in
+  DEPRECATED: This command will be removed from the `apollo` CLI in 
+  its next major version. Replacement functionality is available in 
   the new Apollo Rover CLI: https://go.apollo.dev/t/migration
   -----------------------------------------------------------------
 
