@@ -1,16 +1,16 @@
 {
-  "name": "apollo",
+  "name": "ng-apollo",
   "description": "Command line tool for Apollo GraphQL",
   "version": "2.34.0",
   "referenceID": "21ad0845-c235-422e-be7d-a998310df972",
-  "author": "Apollo GraphQL <packages@apollographql.com>",
+  "author": "Apollo GraphQL <brendancopley@protonmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollographql/apollo-tooling.git"
+    "url": "git+https://github.com/BrendanEthika/apollo-tooling.git"
   },
-  "homepage": "https://github.com/apollographql/apollo-tooling",
-  "bugs": "https://github.com/apollographql/apollo-tooling/issues",
+  "homepage": "https://github.com/BrendanEthika/apollo-tooling",
+  "bugs": "https://github.com/BrendanEthika/apollo-tooling/issues",
   "files": [
     "/bin",
     "/lib",
@@ -47,7 +47,7 @@
     "apollo-codegen-typescript": "0.40.9",
     "apollo-env": "0.10.2",
     "apollo-graphql": "0.9.7",
-    "apollo-language-server": "1.26.9",
+    "ng-apollo-language-server": "1.27.2",
     "chalk": "4.1.2",
     "cli-ux": "6.0.9",
     "env-ci": "7.1.0",

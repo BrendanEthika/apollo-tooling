@@ -1,5 +1,5 @@
 import { Command } from "@oclif/command";
-import { LoadingHandler } from "apollo-language-server";
+import { LoadingHandler } from "ng-apollo-language-server";
 export class OclifLoadingHandler implements LoadingHandler {
   constructor(private command: Command) {}
   async handle<T>(message: string, value: Promise<T>): Promise<T> {

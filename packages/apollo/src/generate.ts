@@ -24,7 +24,7 @@ import {
 import { generateSource as generateScalaSource } from "apollo-codegen-scala";
 
 import { FlowCompilerOptions } from "../../apollo-codegen-flow/lib/language";
-import { validateQueryDocument } from "apollo-language-server/lib/errors/validation";
+import { validateQueryDocument } from "ng-apollo-language-server/lib/errors/validation";
 import { DEFAULT_FILE_EXTENSION as TYPESCRIPT_DEFAULT_FILE_EXTENSION } from "apollo-codegen-typescript/lib/helpers";
 
 export type TargetType =

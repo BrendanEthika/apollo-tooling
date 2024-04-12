@@ -1,14 +1,14 @@
 {
-  "name": "apollo-tooling-monorepo",
+  "name": "ng-apollo-tooling-monorepo",
   "private": true,
-  "homepage": "https://github.com/apollographql/apollo-tooling",
-  "bugs": "https://github.com/apollographql/apollo-tooling/issues",
+  "homepage": "https://github.com/BrendanEthika/apollo-tooling",
+  "bugs": "https://github.com/BrendanEthika/apollo-tooling/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollographql/apollo-tooling.git"
+    "url": "git+https://github.com/BrendanEthika/apollo-tooling.git"
   },
   "license": "MIT",
-  "author": "Apollo GraphQL <packages@apollographql.com>",
+  "author": "Apollo GraphQL <brendancopley@protonmail.com>",
   "bin": {
     "apollo": "./packages/apollo/bin/run"
   },

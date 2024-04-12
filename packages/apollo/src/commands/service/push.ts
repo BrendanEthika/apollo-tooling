@@ -3,8 +3,8 @@ import { table } from "table";
 import { introspectionFromSchema, printSchema } from "graphql";
 import { gitInfo } from "../../git";
 import { ProjectCommand } from "../../Command";
-import { UploadSchemaVariables } from "apollo-language-server/lib/graphqlTypes";
-import { GraphQLServiceProject } from "apollo-language-server";
+import { UploadSchemaVariables } from "ng-apollo-language-server/lib/graphqlTypes";
+import { GraphQLServiceProject } from "ng-apollo-language-server";
 import chalk from "chalk";
 import { graphUndefinedError } from "../../utils/sharedMessages";
 

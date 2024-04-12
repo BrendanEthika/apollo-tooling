@@ -1,5 +1,5 @@
 import { getOperationManifestFromProject } from "../getOperationManifestFromProject";
-import { GraphQLClientProject } from "apollo-language-server";
+import { GraphQLClientProject } from "ng-apollo-language-server";
 
 const mergedOperationsAndFragmentsForService = require("./fixtures/mockOperations.json");
 

@@ -5,7 +5,7 @@ import { ClientCommand } from "../../Command";
 import { CompactRenderer } from "../../utils";
 import URI from "vscode-uri";
 import { relative } from "path";
-import { graphqlTypes } from "apollo-language-server";
+import { graphqlTypes } from "ng-apollo-language-server";
 import chalk from "chalk";
 import envCi from "env-ci";
 import { graphUndefinedError } from "../../utils/sharedMessages";

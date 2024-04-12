@@ -1,6 +1,6 @@
 import { parse, print } from "graphql";
 import { removeConnectionDirectives, removeClientDirectives } from "../graphql";
-import { withTypenameFieldAddedWhereNeeded } from "apollo-language-server";
+import { withTypenameFieldAddedWhereNeeded } from "ng-apollo-language-server";
 
 describe("typename additions", () => {
   it("adds typenames to selectionSets", () => {
