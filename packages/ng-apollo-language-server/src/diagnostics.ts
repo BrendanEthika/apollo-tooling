@@ -20,7 +20,7 @@ import { ValidationRule } from "graphql/validation/ValidationContext";
  * Build an array of code diagnostics for all executable definitions in a document.
  */
 export function collectExecutableDefinitionDiagnositics(
-  schema: GraphQLSchema,
+  schema: any,
   queryDocument: GraphQLDocument,
   fragments: { [fragmentName: string]: FragmentDefinitionNode } = {},
   rules?: ValidationRule[]

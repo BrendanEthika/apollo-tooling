@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "composite": true
+    "composite": true,
+    "declaration": false
   },
   "files": [],
   "include": [],
@@ -13,7 +14,7 @@
     { "path": "./packages/apollo-codegen-typescript" },
     { "path": "./packages/apollo-env" },
     { "path": "./packages/apollo-graphql" },
-    { "path": "./packages/apollo-language-server" },
+    { "path": "./packages/ng-apollo-language-server"},
     { "path": "./packages/apollo-tools" },
   ]
 }

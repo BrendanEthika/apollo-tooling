@@ -41,6 +41,7 @@ export class GraphQLDataSource<TContext = any> {
     return ApolloLink.from([
       this.onErrorLink(),
       this.onRequestLink(),
+      // @ts-ignore-next-line
       createHttpLink({ fetch, uri }),
     ]);
   }

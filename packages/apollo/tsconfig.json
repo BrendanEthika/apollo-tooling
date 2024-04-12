@@ -19,7 +19,7 @@
     { "path": "../apollo-codegen-typescript" },
     { "path": "../apollo-env" },
     { "path": "../apollo-graphql" },
-    { "path": "../apollo-language-server" },
+    { "path": "../ng-apollo-language-server"},
     { "path": "../apollo-tools" }
   ]
 }

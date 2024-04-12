@@ -309,7 +309,7 @@ export default class ServiceCheck extends ProjectCommand {
 
     const { isCi } = envCi();
 
-    let schema: GraphQLSchema | undefined;
+    let schema: any | undefined;
     let graphID: string | undefined;
     let graphVariant: string | undefined;
     try {

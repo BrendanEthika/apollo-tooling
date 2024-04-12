@@ -50,7 +50,7 @@ function toPath(uri: string): string {
 
 export default function generate(
   document: DocumentNode,
-  schema: GraphQLSchema,
+  schema: any,
   outputPath: string,
   only: string | undefined,
   target: TargetType,

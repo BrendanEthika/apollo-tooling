@@ -56,7 +56,7 @@ export function highlightNodeForNode(node: ASTNode): ASTNode {
  * and need to handle Interface and Union types.
  */
 export function getFieldDef(
-  schema: GraphQLSchema,
+  schema: any,
   parentType: GraphQLCompositeType,
   fieldAST: FieldNode
 ): GraphQLField<any, any> | undefined {

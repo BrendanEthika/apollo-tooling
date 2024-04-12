@@ -6,7 +6,7 @@ it("is turned on after summit", () => {});
 // import { stdout as uiLog, mockConsole } from "heroku-cli-util";
 // import { introspectionQuery, print, execute, buildSchema } from "graphql";
 // import gql from "graphql-tag";
-// import { UPLOAD_SCHEMA } from "../../../../../apollo-language-server/src/engine/operations/uploadSchema";
+// import { UPLOAD_SCHEMA } from "../../../../../ng-apollo-language-server/src/engine/operations/uploadSchema";
 // import { Volume } from "memfs";
 
 // export const vol = Volume.fromJSON({});

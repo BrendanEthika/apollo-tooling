@@ -7,6 +7,7 @@ import { UploadSchemaVariables } from "ng-apollo-language-server/lib/graphqlType
 import { GraphQLServiceProject } from "ng-apollo-language-server";
 import chalk from "chalk";
 import { graphUndefinedError } from "../../utils/sharedMessages";
+import {GraphQLSchema} from "graphql/type/schema";
 
 export default class ServicePush extends ProjectCommand {
   static aliases = ["schema:publish"];
@@ -152,7 +153,7 @@ export default class ServicePush extends ProjectCommand {
             return;
           }
 
-          const schema = await project.resolveSchema({ tag: config.variant });
+          const schema = <GraphQLSchema>await project.resolveSchema({ tag: config.variant });
 
           const variables: UploadSchemaVariables = {
             id: config.graph,

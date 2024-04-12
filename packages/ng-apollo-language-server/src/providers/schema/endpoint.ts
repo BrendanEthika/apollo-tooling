@@ -27,6 +27,7 @@ export class EndpointSchemaProvider implements GraphQLSchemaProvider {
     const { skipSSLValidation, url, headers } = this.config;
     const options: HttpLink.Options = {
       uri: url,
+      // @ts-ignore-next-line
       fetch,
     };
     if (url.startsWith("https:") && skipSSLValidation) {
@@ -111,6 +112,7 @@ export class EndpointSchemaProvider implements GraphQLSchemaProvider {
     const { skipSSLValidation, url, headers } = this.config;
     const options: HttpLink.Options = {
       uri: url,
+      // @ts-ignore-next-line
       fetch,
     };
     if (url.startsWith("https:") && skipSSLValidation) {

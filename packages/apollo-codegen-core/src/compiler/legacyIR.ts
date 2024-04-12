@@ -36,7 +36,7 @@ export interface CompilerOptions {
 }
 
 export interface LegacyCompilerContext {
-  schema: GraphQLSchema;
+  schema: any;
   operations: { [operationName: string]: LegacyOperation };
   fragments: { [fragmentName: string]: LegacyFragment };
   typesUsed: GraphQLType[];
@@ -112,7 +112,7 @@ export interface Argument {
 }
 
 export function compileToLegacyIR(
-  schema: GraphQLSchema,
+  schema: any,
   document: DocumentNode,
   options: CompilerOptions = {
     mergeInFieldsFromFragmentSpreads: true,

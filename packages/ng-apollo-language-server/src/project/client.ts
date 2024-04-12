@@ -49,13 +49,13 @@ import URI from "vscode-uri";
 
 type Maybe<T> = null | undefined | T;
 
-function schemaHasASTNodes(schema: GraphQLSchema): boolean {
+function schemaHasASTNodes(schema: any): boolean {
   const queryType = schema && schema.getQueryType();
   return !!(queryType && queryType.astNode);
 }
 
 function augmentSchemaWithGeneratedSDLIfNeeded(
-  schema: GraphQLSchema
+  schema: any
 ): GraphQLSchema {
   if (schemaHasASTNodes(schema)) return schema;
 

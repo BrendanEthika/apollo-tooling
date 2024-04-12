@@ -8,7 +8,7 @@ declare module "@apollographql/graphql-language-service-interface" {
   } from "vscode-languageserver";
 
   function getAutocompleteSuggestions(
-    schema: GraphQLSchema,
+    schema: any,
     queryText: string,
     position: Position
   ): CompletionItem[];

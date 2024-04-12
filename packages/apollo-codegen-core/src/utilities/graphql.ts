@@ -117,7 +117,7 @@ export function valueFromValueNode(
 }
 
 export function isTypeProperSuperTypeOf(
-  schema: GraphQLSchema,
+  schema: any,
   maybeSuperType: GraphQLCompositeType,
   subType: GraphQLCompositeType
 ) {
@@ -135,7 +135,7 @@ export function isTypeProperSuperTypeOf(
  * Extracts the root type of the operation from the schema.
  */
 export function getOperationRootType(
-  schema: GraphQLSchema,
+  schema: any,
   operation: OperationDefinitionNode
 ) {
   switch (operation.operation) {
@@ -171,7 +171,7 @@ export function getOperationRootType(
  * and need to handle Interface and Union types.
  */
 export function getFieldDef(
-  schema: GraphQLSchema,
+  schema: any,
   parentType: GraphQLCompositeType,
   fieldAST: FieldNode
 ): GraphQLField<any, any> | undefined {

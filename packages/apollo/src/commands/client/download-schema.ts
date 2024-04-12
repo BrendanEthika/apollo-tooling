@@ -3,6 +3,7 @@ import { ClientCommand } from "../../Command";
 import mkdirp from "mkdirp";
 import fs from "fs";
 import { dirname as getDirName } from "path";
+import {GraphQLSchema} from "graphql/type/schema";
 
 export default class SchemaDownload extends ClientCommand {
   static description =
@@ -30,7 +31,7 @@ export default class SchemaDownload extends ClientCommand {
         {
           title: `Saving schema to ${args.output}`,
           task: async () => {
-            const schema = await project.resolveSchema({ tag: config.variant });
+            const schema = <GraphQLSchema>await project.resolveSchema({ tag: config.variant });
             const formattedSchema = isSDLFormat
               ? printSchema(schema)
               : JSON.stringify(introspectionFromSchema(schema), null, 2);

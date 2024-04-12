@@ -1,7 +1,7 @@
 {
   "name": "ng-apollo-language-server",
   "description": "A language server for Apollo GraphQL projects",
-  "version": "1.27.2",
+  "version": "1.27.3",
   "author": "Apollo GraphQL <brendancopley@protonmail.com>",
   "license": "MIT",
   "repository": {
