@@ -1,5 +1,5 @@
 {
   "sandboxes": [],
-  "node": "16",
+  "node": "18",
   "installCommand": "install-with-npm-8.5"
 }
