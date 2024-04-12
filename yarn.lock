@@ -5252,7 +5252,7 @@ ng-apollo-language-server@1.27.3, "ng-apollo-language-server@file:/Users/hiyabud
     vscode-uri "1.0.6"
 
 "ng-apollo@file:/Users/hiyabuddy/sites/apollo-tooling/packages/apollo":
-  version "2.34.0"
+  version "2.35.0"
   resolved "file:packages/apollo"
   dependencies:
     "@apollographql/apollo-tools" "0.5.4"

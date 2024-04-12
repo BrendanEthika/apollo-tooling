@@ -1,6 +1,6 @@
 To see release notes and changes for `apollo`, See the [apollo-tooling changelog](https://github.com/BrendanEthika/apollo-tooling/blob/master/CHANGELOG.md)
 
-## 2.34.0
+## 2.35.0
 
 ### Minor Changes
 
