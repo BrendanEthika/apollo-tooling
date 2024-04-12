@@ -5,7 +5,7 @@ import {
   getOperationManifestFromProject,
   ManifestEntry,
 } from "../../utils/getOperationManifestFromProject";
-import { ClientIdentity } from "apollo-language-server";
+import { ClientIdentity } from "ng-apollo-language-server";
 
 export default class ClientExtract extends ClientCommand {
   static description = "Extract queries from a client";

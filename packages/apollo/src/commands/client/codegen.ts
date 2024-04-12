@@ -5,7 +5,7 @@ import { Kind, DocumentNode } from "graphql";
 import { Gaze } from "gaze";
 import URI from "vscode-uri";
 import chalk from "chalk";
-import { Debug } from "apollo-language-server";
+import { Debug } from "ng-apollo-language-server";
 
 import { TargetType, default as generate } from "../../generate";
 import { ClientCommand, ProjectCommand } from "../../Command";

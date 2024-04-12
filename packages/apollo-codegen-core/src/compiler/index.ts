@@ -39,7 +39,7 @@ import {
   isMetaFieldName,
 } from "../utilities/graphql";
 
-import { withTypenameFieldAddedWhereNeeded } from "apollo-language-server";
+import { withTypenameFieldAddedWhereNeeded } from "ng-apollo-language-server";
 
 export interface CompilerOptions {
   addTypename?: boolean;

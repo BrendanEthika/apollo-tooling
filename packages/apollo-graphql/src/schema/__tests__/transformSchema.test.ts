@@ -12,7 +12,7 @@ describe("transformSchema", () => {
       bar: String
     }
 
-    # https://github.com/apollographql/apollo-tooling/issues/2162
+    # https://github.com/BrendanEthika/apollo-tooling/issues/2162
     directive @test(baz: DirectiveArg) on FIELD_DEFINITION
 
     interface FooInterface {

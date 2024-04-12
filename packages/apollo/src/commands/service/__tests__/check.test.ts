@@ -4,11 +4,11 @@ import ServiceCheck, {
   formatTimePeriod,
 } from "../check";
 import checkSchemaResult from "../../../../__fixtures__/check-schema-result";
-import { ChangeSeverity } from "apollo-language-server/lib/graphqlTypes";
+import { ChangeSeverity } from "ng-apollo-language-server/lib/graphqlTypes";
 import chalk from "chalk";
 import { stdout } from "stdout-stderr";
 import * as graphql from "graphql";
-import { graphqlTypes } from "apollo-language-server";
+import { graphqlTypes } from "ng-apollo-language-server";
 import nock from "nock";
 import stripAnsi from "strip-ansi";
 

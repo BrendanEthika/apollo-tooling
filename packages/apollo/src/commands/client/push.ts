@@ -13,7 +13,7 @@ import {
   GraphQLClientProject,
   ApolloConfig,
   graphqlTypes,
-} from "apollo-language-server";
+} from "ng-apollo-language-server";
 import { graphUndefinedError } from "../../utils/sharedMessages";
 
 export default class ClientPush extends ClientCommand {
@@ -142,7 +142,7 @@ export default class ClientPush extends ClientCommand {
                     [
                       "Registration failed and did not receive invalid operations.",
                       "This should not occur, so please open a GitHub issue on:",
-                      "https://github.com/apollographql/apollo-tooling/",
+                      "https://github.com/BrendanEthika/apollo-tooling/",
                     ].join("\n")
                   );
                 }

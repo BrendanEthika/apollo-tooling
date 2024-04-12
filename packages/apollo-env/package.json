@@ -1,14 +1,14 @@
 {
-  "name": "apollo-env",
+  "name": "ng-apollo-env",
   "version": "0.10.2",
-  "author": "packages@apollographql.com",
+  "author": "brendancopley@protonmail.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollographql/apollo-tooling.git"
+    "url": "git+https://github.com/BrendanEthika/apollo-tooling.git"
   },
-  "homepage": "https://github.com/apollographql/apollo-tooling",
-  "bugs": "https://github.com/apollographql/apollo-tooling/issues",
+  "homepage": "https://github.com/BrendanEthika/apollo-tooling",
+  "bugs": "https://github.com/BrendanEthika/apollo-tooling/issues",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {

@@ -8,7 +8,7 @@
 
 ---
 
-> **[2022-07-07] Are you here for codegen?** We highly recommend using [graphql-code-generator](https://www.graphql-code-generator.com/) instead. Codegen in this repo is no longer supported and will be removed completely in a future version. For additional migration details, please see this fantastic writeup by @dotansimha: https://github.com/apollographql/apollo-tooling/issues/2053
+> **[2022-07-07] Are you here for codegen?** We highly recommend using [graphql-code-generator](https://www.graphql-code-generator.com/) instead. Codegen in this repo is no longer supported and will be removed completely in a future version. For additional migration details, please see this fantastic writeup by @dotansimha: https://github.com/BrendanEthika/apollo-tooling/issues/2053
 
 ---
 
@@ -16,7 +16,7 @@
 
 ---
 
-> **[2021-07-23] Note - Housekeeping:** Apollo's GraphQL VSCode extension is no longer housed in this repository. It is now maintained separately in [this repo](https://github.com/apollographql/vscode-graphql).
+> **[2021-07-23] Note - Housekeeping:** Apollo's GraphQL VSCode extension is no longer housed in this repository. It is now maintained separately in [this repo](https://github.com/BrendanEthika/vscode-graphql).
 
 ---
 
@@ -126,7 +126,7 @@ OPTIONS
       containing GraphQL queries in Javascript/Typescript code
 ```
 
-_See code: [src/commands/client/check.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/client/check.ts)_
+_See code: [src/commands/client/check.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/client/check.ts)_
 
 ## `apollo client:codegen [OUTPUT]`
 
@@ -272,7 +272,7 @@ ALIASES
   $ apollo codegen:generate
 ```
 
-_See code: [src/commands/client/codegen.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/client/codegen.ts)_
+_See code: [src/commands/client/codegen.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/client/codegen.ts)_
 
 ## `apollo client:download-schema OUTPUT`
 
@@ -334,7 +334,7 @@ OPTIONS
       containing GraphQL queries in Javascript/Typescript code
 ```
 
-_See code: [src/commands/client/download-schema.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/client/download-schema.ts)_
+_See code: [src/commands/client/download-schema.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/client/download-schema.ts)_
 
 ## `apollo client:extract OUTPUT`
 
@@ -403,7 +403,7 @@ OPTIONS
       containing GraphQL queries in Javascript/Typescript code
 ```
 
-_See code: [src/commands/client/extract.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/client/extract.ts)_
+_See code: [src/commands/client/extract.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/client/extract.ts)_
 
 ## `apollo client:push`
 
@@ -461,7 +461,7 @@ OPTIONS
       containing GraphQL queries in Javascript/Typescript code
 ```
 
-_See code: [src/commands/client/push.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/client/push.ts)_
+_See code: [src/commands/client/push.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/client/push.ts)_
 
 ## `apollo help [COMMAND]`
 
@@ -708,7 +708,7 @@ ALIASES
   $ apollo schema:check
 ```
 
-_See code: [src/commands/service/check.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/service/check.ts)_
+_See code: [src/commands/service/check.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/service/check.ts)_
 
 ## `apollo service:delete`
 
@@ -753,7 +753,7 @@ DESCRIPTION
   -----------------------------------------------------------------
 ```
 
-_See code: [src/commands/service/delete.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/service/delete.ts)_
+_See code: [src/commands/service/delete.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/service/delete.ts)_
 
 ## `apollo service:download OUTPUT`
 
@@ -799,7 +799,7 @@ ALIASES
   $ apollo schema:download
 ```
 
-_See code: [src/commands/service/download.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/service/download.ts)_
+_See code: [src/commands/service/download.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/service/download.ts)_
 
 ## `apollo service:list`
 
@@ -836,7 +836,7 @@ DESCRIPTION
   -----------------------------------------------------------------
 ```
 
-_See code: [src/commands/service/list.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/service/list.ts)_
+_See code: [src/commands/service/list.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/service/list.ts)_
 
 ## `apollo service:push`
 
@@ -904,7 +904,7 @@ ALIASES
   $ apollo schema:publish
 ```
 
-_See code: [src/commands/service/push.ts](https://github.com/apollographql/apollo-tooling/blob/master/packages/apollo/src/commands/service/push.ts)_
+_See code: [src/commands/service/push.ts](https://github.com/BrendanEthika/apollo-tooling/blob/master/packages/apollo/src/commands/service/push.ts)_
 <!-- commandsstop -->
 
 # Configuration
@@ -928,11 +928,11 @@ module.exports = {
 
 ## Accompanying Libraries
 
-See [Apollo iOS](https://github.com/apollographql/apollo-ios) for details on the mapping from GraphQL results to Swift types, as well as runtime support for executing queries and mutations. For Scala, see [React Apollo Scala.js](https://github.com/apollographql/react-apollo-scalajs) for details on how to use generated Scala code in a Scala.js app with Apollo Client.
+See [Apollo iOS](https://github.com/BrendanEthika/apollo-ios) for details on the mapping from GraphQL results to Swift types, as well as runtime support for executing queries and mutations. For Scala, see [React Apollo Scala.js](https://github.com/BrendanEthika/react-apollo-scalajs) for details on how to use generated Scala code in a Scala.js app with Apollo Client.
 
 ## `gql` template support
 
-If the source file for generation is a JavaScript or TypeScript file, the codegen will try to extrapolate the queries inside the [gql tag](https://github.com/apollographql/graphql-tag) templates.
+If the source file for generation is a JavaScript or TypeScript file, the codegen will try to extrapolate the queries inside the [gql tag](https://github.com/BrendanEthika/graphql-tag) templates.
 
 The tag name is configurable using the CLI `--tagName` option.
 

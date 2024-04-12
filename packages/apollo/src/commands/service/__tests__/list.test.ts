@@ -18,7 +18,7 @@ const fakeApiKey = "service:engine:9YC5AooMa2yO11eFlZat11";
  *
  * This is hard-coded to `fakeApiKey` because this is out day-to-day usage should be. If we're going to be
  * updating the mocked data; we'll need to use a real API key (see [README#Regenerating Mocked Network
- * Data](https://github.com/apollographql/apollo-tooling#regenerating-mocked-network-data)); which will be
+ * Data](https://github.com/BrendanEthika/apollo-tooling#regenerating-mocked-network-data)); which will be
  * placed here.
  */
 const apiKey = fakeApiKey;

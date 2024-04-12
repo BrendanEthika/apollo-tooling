@@ -26,7 +26,7 @@ A description of what actually happened, including a screenshot or copy-paste of
 **How to reproduce the issue:**
 
 <!--
-If possible, please create a reproduction and link to it here. If reporting a CLI issue, it's helpful to open a sample repository where your broken commands can be run against to reproduce the error. You can fork the [fullstack tutorial](https://github.com/apollographql/fullstack-tutorial) to reproduce many issues.
+If possible, please create a reproduction and link to it here. If reporting a CLI issue, it's helpful to open a sample repository where your broken commands can be run against to reproduce the error. You can fork the [fullstack tutorial](https://github.com/BrendanEthika/fullstack-tutorial) to reproduce many issues.
 
 Provide instructions for how the issue can be reproduced by a maintainer or contributor. Be as specific as possible, and only mention what is necessary to reproduce the bug. If possible, try to isolate the exact circumstances in which the bug occurs and avoid speculation over what the cause might be.
 -->

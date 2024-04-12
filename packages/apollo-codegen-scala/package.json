@@ -1,15 +1,15 @@
 {
-  "name": "apollo-codegen-scala",
+  "name": "ng-apollo-codegen-scala",
   "description": "Scala generator module for Apollo Codegen",
   "version": "0.39.9",
-  "author": "Apollo GraphQL <packages@apollographql.com>",
+  "author": "Apollo GraphQL <brendancopley@protonmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollographql/apollo-tooling.git"
+    "url": "git+https://github.com/BrendanEthika/apollo-tooling.git"
   },
-  "homepage": "https://github.com/apollographql/apollo-tooling",
-  "bugs": "https://github.com/apollographql/apollo-tooling/issues",
+  "homepage": "https://github.com/BrendanEthika/apollo-tooling",
+  "bugs": "https://github.com/BrendanEthika/apollo-tooling/issues",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
